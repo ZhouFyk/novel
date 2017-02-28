@@ -77,7 +77,7 @@ class HandleNovel {
 		$linkurl = [];
 		foreach ($links as $key => &$value) {
 			$value[1] =
-				'<a href="index.php?page=chapter&url[0]=' . $url . '&url[1]=' . $value[1] . '" class="list-group-item">' . $value[2] . '</a>';
+				'<a href="novel/index.php?page=chapter&url[0]=' . $url . '&url[1]=' . $value[1] . '" class="list-group-item">' . $value[2] . '</a>';
 			$linkurl[] = $value[1];
 		}
 
@@ -103,17 +103,17 @@ class HandleNovel {
 		// preg_match($pattern['list'], $cpage, $list);
 		preg_match($pattern['next'], $cpage, $next);
 
-		$chapter['list'] = 'index.php?page=list&url[0]=' . $url[0];
+		$chapter['list'] = 'novel/index.php?page=list&url[0]=' . $url[0];
 
 		if (empty($prev)) {
-			$chapter['prev'] = 'index.php?page=list&url[0]=' . $url[0];
+			$chapter['prev'] = 'novel/index.php?page=list&url[0]=' . $url[0];
 		} else {
-			$chapter['prev'] = 'index.php?page=chapter&url[0]=' . $url[0] . '&url[1]=' . $prev[1];
+			$chapter['prev'] = 'novel/index.php?page=chapter&url[0]=' . $url[0] . '&url[1]=' . $prev[1];
 		}
 		if (empty($next)) {
-			$chapter['next'] = 'index.php?page=list&url[0]=' . $url[0];
+			$chapter['next'] = 'novel/index.php?page=list&url[0]=' . $url[0];
 		} else {
-			$chapter['next'] = 'index.php?page=chapter&url[0]=' . $url[0] . '&url[1]=' . $next[1];
+			$chapter['next'] = 'novel/index.php?page=chapter&url[0]=' . $url[0] . '&url[1]=' . $next[1];
 		}
 
 		$chapter['title'] = $title[1];
