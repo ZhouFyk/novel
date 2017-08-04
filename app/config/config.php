@@ -1,7 +1,7 @@
 <?php
-define('HOSTNAME', 'localhost'); //连接数据库服务器
-define('DBUSERNAME', 'root'); //连接数据库用户帐号
-define('PASSWORD', '273510'); //数据库登录密码
+define('HOSTNAME', ''); //连接数据库服务器
+define('DBUSERNAME', ''); //连接数据库用户帐号
+define('PASSWORD', ''); //数据库登录密码
 define('DBNAME', 'novel'); //数据库名称
 
 define('CONFIG', './app/config/');
