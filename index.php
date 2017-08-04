@@ -30,15 +30,3 @@ if (!empty($_POST['novel'])) {
 } else {
 	$view = load_view('header') . load_view('search') . load_view('footer');
 }
-
-// set_time_limit(0);
-// $s = "帝尊";
-// $novel = new HandleNovel($s);
-// $links = $novel->returnlPage();
-
-// foreach ($links as $key => $value) {
-// 	echo "<a href=" . $value[1] . ">" . $value[2] . "</a><br>";
-// }
-// if ($dowm) {
-// 	echo "下载完成";
-// }
